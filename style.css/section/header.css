@@ -1,0 +1,147 @@
+.header-container {
+	background-color: var(--color-alt);
+}
+
+.header__top {
+	height: 6.25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.header__logo-link {
+	color: var(--color-accent);
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 3.75rem;
+}
+
+.header__list {
+	display: flex;
+	align-items: center;
+}
+
+.header__item {
+	margin-right: 3.75rem;
+}
+
+.header__link {
+	color: var(--text-color);
+	font-size: 18px;
+}
+
+.header__backet-svg {
+	min-width: 24px;
+	aspect-ratio: 1;
+}
+
+.header__link:hover {
+	color: #598d66;
+}
+
+.header__backet-svg:hover {
+	fill: #598d66;
+}
+
+#open-sidebar-button {
+	display: none;
+	background: none;
+	border: none;
+	padding: 1em;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+#close-sidebar-button {
+	display: none;
+	background: none;
+	border: none;
+	padding-top: 16px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	.header__top {
+		height: 7.69rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.header__logo {
+		position: relative;
+	}
+
+	.header__logo::after {
+		content: '';
+		width: 510px;
+		height: 0.0625rem;
+		background: #c3d1c6;
+		position: absolute;
+		top: 43px;
+	}
+
+	.nav {
+		gap: 69px;
+	}
+}
+
+@media screen and (max-width: 592px) {
+	#open-sidebar-button,
+	#close-sidebar-button {
+		display: block;
+	}
+
+	.header-container {
+		background-color: #fff;
+	}
+
+	.header__top {
+		margin-top: 17px;
+		height: 68px;
+	}
+
+	.header__logo::after {
+		display: none;
+	}
+
+	.header__list {
+		position: fixed;
+		width: 100%;
+		height: 433px;
+		background-color: var(--color-alt);
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		gap: 50px;
+		top: 65px;
+		left: -100%;
+		z-index: 10;
+		padding-left: 15px;
+	}
+
+	.header__list.show {
+		right: 0;
+	}
+
+	.header__list.show ~ #overlay {
+		display: block;
+	}
+
+	.header__backet {
+		display: block;
+	}
+}

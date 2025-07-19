@@ -1,3 +1,9 @@
+:root {
+	--color-accent: #598d66;
+	--color-alt: #e1ede6;
+	--text-color: #2c2d35;
+}
+
 html {
 	font-family: 'Raleway';
 	font-weight: 500;
@@ -5,5 +11,25 @@ html {
 
 .container {
 	max-width: 1110px;
+	/* Помогает избежать адаптаций на каждом пикселе */
+	width: calc(100% - 80px);
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 690px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.container {
+		max-width: 510px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.container {
+		max-width: 290px;
+	}
 }
