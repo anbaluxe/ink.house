@@ -1,0 +1,35 @@
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 70px;
+}
+
+.hero__left {
+	max-width: 540px;
+	max-height: 621px;
+}
+.hero__right {
+	max-width: 540px;
+}
+.hero__title {
+	font-size: clamp(30px, 5vw, 60px);
+	line-height: 110%;
+	margin-bottom: 20px;
+}
+.hero__title--green {
+	color: var(--color-accent);
+}
+.hero__subtitle {
+	margin-bottom: 60px;
+}
+.hero__button {
+	display: inline-block;
+	border: 1px solid var(--color-accent);
+	padding: 20px 60px;
+}
+.hero__link {
+	color: var(--color-accent);
+	font-size: 20px;
+}

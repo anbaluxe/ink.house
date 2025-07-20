@@ -7,29 +7,31 @@
 html {
 	font-family: 'Raleway';
 	font-weight: 500;
+	color: var(--text-color);
 }
 
 .container {
-	max-width: 1110px;
+	max-width: 1190px;
 	/* Помогает избежать адаптаций на каждом пикселе */
 	width: calc(100% - 80px);
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
+.sub {
+	color: #86928b;
+	font-size: 18px;
+	line-height: 150%;
+}
+
+@media screen and (max-width: 767px) {
 	.container {
 		max-width: 690px;
 	}
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 592px) {
 	.container {
-		max-width: 510px;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.container {
-		max-width: 290px;
+		max-width: 590px;
+		width: 100%;
 	}
 }
