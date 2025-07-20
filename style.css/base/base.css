@@ -11,7 +11,7 @@ html {
 }
 
 .container {
-	max-width: 1190px;
+	max-width: 1110px;
 	/* Помогает избежать адаптаций на каждом пикселе */
 	width: calc(100% - 80px);
 	margin: 0 auto;
