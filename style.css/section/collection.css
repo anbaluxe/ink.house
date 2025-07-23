@@ -4,7 +4,7 @@
 			url(../../image/pic_background@2x.jpg) 2x
 		)
 		center/cover no-repeat;
-	height: clamp(570px, 5vh, 574px);
+	height: 574px;
 	margin-bottom: 70px;
 	color: #f4f6f5;
 }
@@ -14,9 +14,11 @@
 	justify-content: start;
 	align-items: center;
 	padding-top: 70px;
+	gap: 20px;
+	margin-bottom: 20px;
 }
 .collection__title {
-	font-size: clamp(24px, 3vh, 40px);
+	font-size: clamp(24px, 4vh, 40px);
 	width: 50%;
 }
 .collection__subtitle {
@@ -48,27 +50,12 @@
 @media screen and (max-width: 380px) {
 	.collection {
 		background-position: 60%;
+		text-align: center;
 	}
 
 	.collection__top {
 		justify-content: center;
 		padding-top: 50px;
-	}
-
-	.collection__subtitle {
-		font-size: 14px;
-	}
-
-	.collection__title {
-		font-size: 20px;
-	}
-
-	.collection__svg {
-		display: none;
-	}
-
-	.collection__link {
-		padding: 20px 40px;
-		font-size: 18px;
+		gap: 5px;
 	}
 }
